@@ -6,10 +6,12 @@ using System.Web;
 
 namespace Z_Market.Models
 {
-    public class Product
+    public class OrderDetail
     {
         [Key]
-        public int ProductId { get; set; }
+        public int OrderDetailID { get; set; }
+        public int OrderID { get; set; }
+        public int ProductID { get; set; }
 
         [Display(Name = "Product Description")]
         [Required(ErrorMessage = "You must enter the field {0}")]
@@ -21,22 +23,13 @@ namespace Z_Market.Models
         [DisplayFormat(DataFormatString = "{0:C2}", ApplyFormatInEditMode = false)]
         public decimal Price { get; set; }
 
-        [Display(Name = "Last Buy")]
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
-        public DateTime LastBuy { get; set; }
-
-
         [DataType(DataType.Currency)]
+        [Required(ErrorMessage = "You must enter the field {0}")]
         [DisplayFormat(DataFormatString = "{0:N2}", ApplyFormatInEditMode = false)]
-        public float Stock { get; set; }
+        public float Quantity { get; set; }
 
-        [DataType(DataType.MultilineText)]
-        public string Remarks { get; set; }
-
-        public virtual ICollection<SupplierProduct> SupplierProducts { get; set; }
-        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
-
+        public virtual Order Order { get; set; }
+        public virtual Product Product { get; set; }
 
     }
 }

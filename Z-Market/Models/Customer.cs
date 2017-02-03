@@ -40,6 +40,7 @@ namespace Z_Market.Models
 
         public int DocumentTypeID { get; set; }
         public virtual DocumentType DocumentType { get; set; }
+        public virtual ICollection<Order> Orders { get; set; }
 
 
     }
