@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z-Market", "Z-Market\Z-Market.csproj", "{568B4800-26BC-4B2C-88B2-C694565C231B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z-Market.Tests", "Z-Market.Tests\Z-Market.Tests.csproj", "{E221971F-CAFB-4A12-A96C-0C988038251A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{568B4800-26BC-4B2C-88B2-C694565C231B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{568B4800-26BC-4B2C-88B2-C694565C231B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{568B4800-26BC-4B2C-88B2-C694565C231B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{568B4800-26BC-4B2C-88B2-C694565C231B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E221971F-CAFB-4A12-A96C-0C988038251A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E221971F-CAFB-4A12-A96C-0C988038251A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E221971F-CAFB-4A12-A96C-0C988038251A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E221971F-CAFB-4A12-A96C-0C988038251A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
