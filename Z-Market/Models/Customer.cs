@@ -41,5 +41,6 @@ namespace Z_Market.Models
         public int DocumentTypeID { get; set; }
         public virtual DocumentType DocumentType { get; set; }
 
+
     }
 }
